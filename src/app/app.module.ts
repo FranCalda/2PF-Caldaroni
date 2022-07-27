@@ -15,21 +15,26 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatRadioModule } from '@angular/material/radio';
-import { CargaComponent } from './carga/carga.component';
+import { CargaComponent } from './general/components/carga/carga.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { MatTableModule } from '@angular/material/table';
-import { TablaComponent } from './tabla/tabla.component';
+import { TablaComponent } from './general/components/tabla/tabla.component';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
-import { LoginComponent } from './components/login/login.component';
+import { LoginComponent } from './auth/components/login/login.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { MatCardModule } from '@angular/material/card';
+import { AuthModule } from './auth/auth.module';
+import { HeaderComponent } from './general/components/header/header.component';
+import { Route } from '@angular/router';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CargaComponent,
     TablaComponent,
-    LoginComponent
+    CargaComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
@@ -50,7 +55,9 @@ import { LoginComponent } from './components/login/login.component';
     HttpClientModule,
     MatTableModule,
     MatPaginatorModule,
-    MatSortModule
+    MatSortModule,
+    FlexLayoutModule,
+    MatCardModule
 
   ],
   providers: [],

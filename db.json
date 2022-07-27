@@ -19,12 +19,8 @@
       "id": 7
     }
   ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
+  "registroUsuario": [
+    
   ],
   "profile": {
     "name": "typicode"
